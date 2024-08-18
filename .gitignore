@@ -1,0 +1,60 @@
+# Arquivos e diretórios do Django
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+db.sqlite3
+*.log
+*.pot
+*.py[cod]
+*.sqlite3
+local_settings.py
+settings_local.py
+media/
+static/
+*.env
+
+# Diretórios de ambientes virtuais
+myenv/
+venv/
+env/
+
+# Arquivos de configuração do ambiente virtual
+.env
+*.venv
+*.virtualenv
+*.envrc
+
+# Diretórios de cache
+.cache/
+*.pyc
+*.pyo
+
+# Outros arquivos e diretórios comuns a ignorar
+.DS_Store
+*.swp
+*.swo
+*.swn
+*.sublime-workspace
+*.sublime-project
+*.idea/
+.vscode/
+*.egg-info/
+dist/
+build/
+*.egg
+*.py[cod]
+
+# Arquivos de configuração de IDE
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vscode/
+
+# Arquivos de configuração do PyCharm
+*.iml
+*.ipr
+*.iws
+
+# Arquivos de sistema
+Thumbs.db

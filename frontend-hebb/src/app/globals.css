@@ -1,0 +1,55 @@
+/* Aplicar um fundo azul claro na página */
+body {
+  background-color: #e0f7fa; /* Azul claro */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Centralizar o texto e a matriz */
+.container {
+  text-align: center;
+}
+
+/* Estilizar a matriz */
+.grid {
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.grid-cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  background-color: white;
+  cursor: pointer;
+}
+
+.grid-cell.active {
+  background-color: black;
+}
+
+/* Estilizar o botão */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
