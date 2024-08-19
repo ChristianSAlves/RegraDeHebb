@@ -6,7 +6,7 @@ from .serializers import HebbModelSerializer
 class HebbTrainView(APIView):
     def post(self, request):
         try:
-            # Dados simples para teste
+            # Declarando uma matriz simples
             letra_A = [[-1]*10 for _ in range(10)]
             letra_B = [[-1]*10 for _ in range(10)]
 
@@ -29,11 +29,11 @@ class HebbTrainView(APIView):
                     letra_B[i][0] = letra_B[i][4] = 1
 
             matrices = [letra_A, letra_B]  # Matriz de entrada
-            y = [1, -1]  # Saídas esperadas
-            w = [0] * 100  # Inicializar os pesos com 0
-            b = 0.0  # Inicializar o bias com 0
+            y = [1, -1]  # Saida de A e B respectivamente
+            w = [0] * 100  # Iniciando os pesos
+            b = 0.0  # Iniciando as bias
 
-            # Função auxiliar para achatar a matriz
+            # Transforma a matriz em um unico vetor para facilitar
             def flatten(matrix):
                 return [item for sublist in matrix for item in sublist]
 
