@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django.urls import path
-from .views import HebbTrainView, HebbPredictView
+from .views import PerceptronPredictView, PerceptronTrainView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/train/', HebbTrainView.as_view(), name='hebb-train'),
-    path('api/recognize/', HebbPredictView.as_view(), name='hebb-recognize'),
+    path('api/train/', PerceptronTrainView.as_view(), name='perceptron-train'),
+    path('api/recognize/', PerceptronPredictView.as_view(), name='perceptron-recognize'),
 ]
